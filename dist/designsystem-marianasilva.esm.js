@@ -16,10 +16,17 @@ var ABbutton = function ABbutton() {
   return React.createElement(ButtonStyled, null, "Click Me");
 };
 
+var _templateObject$1;
+var CardStyled = /*#__PURE__*/styled.div(_templateObject$1 || (_templateObject$1 = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n    padding: 48px;\n    background: #faf7f7;\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n    border-radius: 10px;\n"])));
+var Card = function Card(_ref) {
+  var children = _ref.children;
+  return React.createElement(CardStyled, null, children);
+};
+
 var Thing = function Thing(_ref) {
   var children = _ref.children;
   return React.createElement("div", null, children || "the snozzberries taste like snozzberries");
 };
 
-export { ABbutton, Thing };
+export { ABbutton, Card, Thing };
 //# sourceMappingURL=designsystem-marianasilva.esm.js.map
