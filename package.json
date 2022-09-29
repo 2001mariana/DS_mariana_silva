@@ -35,16 +35,16 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "mydesignsystem",
+  "name": "designsystem-marianasilva",
   "author": "Mariana",
-  "module": "dist/mydesignsystem.esm.js",
+  "module": "dist/designsystem-marianasilva.esm.js",
   "size-limit": [
     {
-      "path": "dist/mydesignsystem.cjs.production.min.js",
+      "path": "dist/designsystem-marianasilva.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/mydesignsystem.esm.js",
+      "path": "dist/designsystem-marianasilva.esm.js",
       "limit": "10 KB"
     }
   ],
