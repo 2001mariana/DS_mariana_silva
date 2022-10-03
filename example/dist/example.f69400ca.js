@@ -40152,13 +40152,13 @@ exports.ServerStyleSheet = Je;
 "production" !== "development" && "undefined" != typeof navigator && "ReactNative" === navigator.product && console.warn("It looks like you've imported 'styled-components' on React Native.\nPerhaps you're looking to import 'styled-components/native'?\nRead more about this at https://www.styled-components.com/docs/basics#react-native"), "production" !== "development" && "test" !== "development" && "undefined" != typeof window && (window["__styled-components-init__"] = window["__styled-components-init__"] || 0, 1 === window["__styled-components-init__"] && console.warn("It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.\n\nSee https://s-c.sh/2BAXzed for more info."), window["__styled-components-init__"] += 1);
 var _default = He;
 exports.default = _default;
-},{"react-is":"../node_modules/react-is/index.js","react":"../node_modules/react/index.js","shallowequal":"../node_modules/shallowequal/index.js","@emotion/stylis":"../node_modules/@emotion/stylis/dist/stylis.browser.esm.js","@emotion/unitless":"../node_modules/@emotion/unitless/dist/unitless.browser.esm.js","@emotion/is-prop-valid":"../node_modules/styled-components/node_modules/@emotion/is-prop-valid/dist/emotion-is-prop-valid.esm.js","hoist-non-react-statics":"../node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js","process":"node_modules/process/browser.js"}],"../dist/mydesignsystem.esm.js":[function(require,module,exports) {
+},{"react-is":"../node_modules/react-is/index.js","react":"../node_modules/react/index.js","shallowequal":"../node_modules/shallowequal/index.js","@emotion/stylis":"../node_modules/@emotion/stylis/dist/stylis.browser.esm.js","@emotion/unitless":"../node_modules/@emotion/unitless/dist/unitless.browser.esm.js","@emotion/is-prop-valid":"../node_modules/styled-components/node_modules/@emotion/is-prop-valid/dist/emotion-is-prop-valid.esm.js","hoist-non-react-statics":"../node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js","process":"node_modules/process/browser.js"}],"../dist/designsystem-marianasilva.esm.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Thing = exports.ABbutton = void 0;
+exports.Thing = exports.Card = exports.ABbutton = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -40188,6 +40188,21 @@ var ABbutton = function ABbutton() {
 };
 
 exports.ABbutton = ABbutton;
+
+var _templateObject$1;
+
+var CardStyled =
+/*#__PURE__*/
+_styledComponents.default.div(_templateObject$1 || (_templateObject$1 =
+/*#__PURE__*/
+_taggedTemplateLiteralLoose(["\n    padding: 48px;\n    background: #faf7f7;\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n    border-radius: 10px;\n"])));
+
+var Card = function Card(_ref) {
+  var children = _ref.children;
+  return _react.default.createElement(CardStyled, null, children);
+};
+
+exports.Card = Card;
 
 var Thing = function Thing(_ref) {
   var children = _ref.children;
@@ -40245,11 +40260,11 @@ var ReactDOM = __importStar(require("react-dom"));
 var _1 = require("../.");
 
 var App = function App() {
-  return React.createElement("div", null, React.createElement(_1.ABbutton, null));
+  return React.createElement("div", null, React.createElement(_1.ABbutton, null), React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), React.createElement(_1.Card, null, "This is Card Component"));
 };
 
 ReactDOM.render(React.createElement(App, null), document.getElementById('root'));
-},{"react-app-polyfill/ie11":"node_modules/react-app-polyfill/ie11.js","react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/profiling.js","../.":"../dist/mydesignsystem.esm.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react-app-polyfill/ie11":"node_modules/react-app-polyfill/ie11.js","react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/profiling.js","../.":"../dist/designsystem-marianasilva.esm.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -40277,7 +40292,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54895" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63883" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
