@@ -40181,10 +40181,32 @@ var ButtonStyled =
 /*#__PURE__*/
 _styledComponents.default.button(_templateObject || (_templateObject =
 /*#__PURE__*/
-_taggedTemplateLiteralLoose(["\n    background-color: #EB9B00;\n    padding: 16px 32px;\n    border: 2px solid #EB9B00;\n    color: #ffffff;\n    cursor: pointer;\n    font-size: 20px;\n    border-radius: 3px;\n    transition: background-color 0.5s, border-color 0.5s, color 0.5s;\n\n    &:hover {\n        background-color: #B87900;\n        border-color: #B87900;\n    }\n"])));
+_taggedTemplateLiteralLoose(["\n    background-color: ", ";\n    padding: ", ";\n    border: 2px solid #EB9B00;\n    color: ", ";\n    cursor: pointer;\n    font-size: ", ";\n    border-radius: 3px;\n    transition: background-color 0.75s, border-color 0.75s, color 0.75s;\n\n    &:hover {\n        background-color: ", " ;\n        border-color: #B87900;\n        color: ", ";\n        transition: background-color 0.75s, border-color 0.75s, color 0.75s;\n    }\n"])), function (props) {
+  return props.color === 'Primary' ? '#EB9B00' : '#FFFFFF';
+}, function (props) {
+  return props.size === 'large' ? '16px 32px' : '8px 16px';
+}, function (props) {
+  return props.color === 'Primary' ? '#FFFFFF' : '#EB9B00';
+}, function (props) {
+  return props.size === 'large' ? '20px' : '14px';
+}, function (props) {
+  return props.color === 'Primary' ? '#B87900' : '#FFFFFF';
+}, function (props) {
+  return props.color === 'Primary' ? '#FFFFFF' : '#B87900';
+});
 
-var ABbutton = function ABbutton() {
-  return _react.default.createElement(ButtonStyled, null, "Click Me");
+var ABbutton = function ABbutton(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? 'Primary' : _ref$color,
+      text = _ref.text,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 'large' : _ref$size,
+      onClick = _ref.onClick;
+  return _react.default.createElement(ButtonStyled, {
+    onClick: onClick,
+    color: color,
+    size: size
+  }, text);
 };
 
 exports.ABbutton = ABbutton;
@@ -40195,7 +40217,7 @@ var CardStyled =
 /*#__PURE__*/
 _styledComponents.default.div(_templateObject$1 || (_templateObject$1 =
 /*#__PURE__*/
-_taggedTemplateLiteralLoose(["\n    padding: 48px;\n    background: #faf7f7;\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n    border-radius: 10px;\n"])));
+_taggedTemplateLiteralLoose(["\n    padding: 48px;\n    background: #FFFFFF;\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n    border-radius: 10px;\n"])));
 
 var Card = function Card(_ref) {
   var children = _ref.children;
@@ -40260,7 +40282,7 @@ var ReactDOM = __importStar(require("react-dom"));
 var _1 = require("../.");
 
 var App = function App() {
-  return React.createElement("div", null, React.createElement(_1.ABbutton, null), React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), React.createElement(_1.Card, null, "This is Card Component"));
+  return React.createElement("div", null, React.createElement(_1.ABbutton, null), React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), React.createElement(_1.Card, null, "This is Card Component"), React.createElement("br", null), React.createElement("br", null), React.createElement("br", null));
 };
 
 ReactDOM.render(React.createElement(App, null), document.getElementById('root'));
