@@ -3,7 +3,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { AbInputQuant, AbInputQuantProps } from '../src'
 
 export default {
-  title: 'componentes/AbInputQuant',
+  title: 'components/AbInputQuant',
   component: AbInputQuant,
   parameters: { actions: { argTypesRegex: '^on.*' } },
 } as ComponentMeta<typeof AbInputQuant>;

@@ -114,6 +114,39 @@ var ABOptionGroup = function ABOptionGroup(_ref) {
   }));
 };
 
+var _templateObject$5, _templateObject2$1, _templateObject3, _templateObject4, _templateObject5;
+var ButtonStyled$1 = /*#__PURE__*/styled.button(_templateObject$5 || (_templateObject$5 = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n    background: #002F52;\n    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);\n    border: none;\n    cursor: pointer;\n    color: #FFF;\n    width: 28px;\n    height: 28px;\n    border-radius: 50%;\n"])));
+var SpanStyled = /*#__PURE__*/styled.span(_templateObject2$1 || (_templateObject2$1 = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n    font-size: 18px;\n    line-height: 27px;\n    display: inline-block;\n    margin: 0 12px;\n    color: #002F52;\n    font-family: Arial, Helvetica, sans-serif;\n"])));
+var FlexContainerStyled = /*#__PURE__*/styled.div(_templateObject3 || (_templateObject3 = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n    display: flex;\n    align-items: center;\n    justify-content: center;\n"])));
+var ContainerStyled = /*#__PURE__*/styled.div(_templateObject4 || (_templateObject4 = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n    width: 100px;\n    text-align: center;\n    display: inline-block;\n"])));
+var LabelStyled$1 = /*#__PURE__*/styled.label(_templateObject5 || (_templateObject5 = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n    color: #002F52;\n    display: block;\n    font-weight: 700;\n    font-size: 16px;\n    font-family: Arial, Helvetica, sans-serif;\n    margin-bottom: 8px;\n"])));
+var AbInputQuant = function AbInputQuant(_ref) {
+  var onChange = _ref.onChange;
+
+  var _useState = React.useState(1),
+      value = _useState[0],
+      setValue = _useState[1];
+
+  React.useEffect(function () {
+    if (onChange) {
+      onChange(Number(value));
+    }
+  }, [value]);
+  return React__default.createElement(ContainerStyled, null, React__default.createElement(LabelStyled$1, null, "Quantidade"), React__default.createElement(FlexContainerStyled, null, React__default.createElement(ButtonStyled$1, {
+    onClick: function onClick() {
+      return setValue(function (prev) {
+        return prev - 1;
+      });
+    }
+  }, "-"), React__default.createElement(SpanStyled, null, value), React__default.createElement(ButtonStyled$1, {
+    onClick: function onClick() {
+      return setValue(function (prev) {
+        return prev + 1;
+      });
+    }
+  }, "+")));
+};
+
 var Thing = function Thing(_ref) {
   var children = _ref.children;
   return React__default.createElement("div", null, children || "the snozzberries taste like snozzberries");
@@ -123,6 +156,7 @@ exports.ABInput = ABInput;
 exports.ABOptionGroup = ABOptionGroup;
 exports.ABTag = ABTag;
 exports.ABbutton = ABbutton;
+exports.AbInputQuant = AbInputQuant;
 exports.Card = Card;
 exports.Thing = Thing;
 //# sourceMappingURL=designsystem-marianasilva.cjs.development.js.map

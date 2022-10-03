@@ -9,3 +9,4 @@ export * from './components/Card';
 export * from './components/Tag';
 export * from './components/ABInput';
 export * from './components/ABOptionGroup';
+export * from './components/ABInputQuant';
