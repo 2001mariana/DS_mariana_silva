@@ -45,10 +45,17 @@ var Card = function Card(_ref) {
   return React.createElement(CardStyled, null, children);
 };
 
+var _templateObject$2;
+var TagStyled = /*#__PURE__*/styled.div(_templateObject$2 || (_templateObject$2 = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n    padding: 14px 22px;\n    color: #FFFFFF;\n    background: #EB9B00;\n    font-weight: 700;\n    font-size: 24px;\n    display: inline-block;\n    font-family: sans-serif;\n"])));
+var ABTag = function ABTag(_ref) {
+  var texto = _ref.texto;
+  return React.createElement(TagStyled, null, texto);
+};
+
 var Thing = function Thing(_ref) {
   var children = _ref.children;
   return React.createElement("div", null, children || "the snozzberries taste like snozzberries");
 };
 
-export { ABbutton, Card, Thing };
+export { ABTag, ABbutton, Card, Thing };
 //# sourceMappingURL=designsystem-marianasilva.esm.js.map

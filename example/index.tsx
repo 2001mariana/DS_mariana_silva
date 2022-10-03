@@ -1,7 +1,9 @@
-import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+
 import { ABbutton, Card } from '../.';
+
+import 'react-app-polyfill/ie11';
 
 const App = () => {
   return (

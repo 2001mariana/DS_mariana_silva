@@ -6,3 +6,4 @@ export interface Props extends HTMLAttributes<HTMLDivElement> {
 export declare const Thing: FC<Props>;
 export * from './components/ABbutton';
 export * from './components/Card';
+export * from './components/Tag';
