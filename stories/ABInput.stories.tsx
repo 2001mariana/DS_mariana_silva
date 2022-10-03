@@ -4,7 +4,7 @@ import React from 'react';
 import { ABInput, InputProps } from '../src'
 
 export default {
-  title: 'componentes/ABInput',
+  title: 'components/ABInput',
   component: ABInput,
   argTypes: {
     label: {

@@ -52,10 +52,28 @@ var ABTag = function ABTag(_ref) {
   return React.createElement(TagStyled, null, texto);
 };
 
+var _templateObject$3, _templateObject2;
+var LabelStyled = /*#__PURE__*/styled.label(_templateObject$3 || (_templateObject$3 = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n    color: #002F52;\n    display: block;\n    font-weight: 700;\n    font-size: 16px;\n    font-family: Arial, Helvetica, sans-serif;\n    margin-left: 16px;\n    margin-bottom: 8px\n"])));
+var InputStyled = /*#__PURE__*/styled.input(_templateObject2 || (_templateObject2 = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n    font-size: 16px;\n    line-height: 24px;\n    color: #002F52;\n    padding: 8px 24px;\n    border: 1px solid #002F52;\n    border-radius: 45px;\n    &:focus{\n        outline: none;\n    }\n    width: 100%;\n    box-sizing: border-box;\n"])));
+var ABInput = function ABInput(_ref) {
+  var label = _ref.label,
+      value = _ref.value,
+      _onChange = _ref.onChange,
+      _ref$type = _ref.type,
+      type = _ref$type === void 0 ? 'text' : _ref$type;
+  return React.createElement("div", null, React.createElement(LabelStyled, null, label), React.createElement(InputStyled, {
+    type: type,
+    value: value,
+    onChange: function onChange(event) {
+      return _onChange(event.target.value);
+    }
+  }));
+};
+
 var Thing = function Thing(_ref) {
   var children = _ref.children;
   return React.createElement("div", null, children || "the snozzberries taste like snozzberries");
 };
 
-export { ABTag, ABbutton, Card, Thing };
+export { ABInput, ABTag, ABbutton, Card, Thing };
 //# sourceMappingURL=designsystem-marianasilva.esm.js.map

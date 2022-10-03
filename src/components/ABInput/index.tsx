@@ -14,15 +14,15 @@ const LabelStyled = styled.label`
 const InputStyled = styled.input`
     font-size: 16px;
     line-height: 24px;
-    color: #002F52;
     padding: 8px 24px;
+    color: #002F52;
     border: 1px solid #002F52;
     border-radius: 45px;
+    width: 100%;
+    box-sizing: border-box;
     &:focus{
         outline: none;
     }
-    width: 100%;
-    box-sizing: border-box;
 `
 
 export interface InputProps {
