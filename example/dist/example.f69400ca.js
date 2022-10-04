@@ -40566,7 +40566,16 @@ var App = function App() {
       valueInput = _a[0],
       setValueInput = _a[1];
 
-  return React.createElement("div", null, React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "success - solid - small"), React.createElement(_1.ButtonSuccess, {
+  return React.createElement("div", null, React.createElement("br", null), React.createElement("br", null), React.createElement(_1.ButtonLed, {
+    label: 'custom text',
+    size: 'small'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement(_1.ButtonLed, {
+    label: 'custom text',
+    size: 'medium'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement(_1.ButtonLed, {
+    label: 'custom text',
+    size: 'large'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "success - solid - small"), React.createElement(_1.ButtonSuccess, {
     label: 'custom text',
     size: 'small',
     variant: 'solid'
@@ -40614,7 +40623,28 @@ var App = function App() {
     label: 'custom text',
     size: 'large',
     variant: 'outlined'
-  }), React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ABbutton primary small"), React.createElement(_1.ABbutton, {
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "black - outlined - small"), React.createElement(_1.ButtonBlack, {
+    label: 'custom text',
+    size: 'small'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "black - outlined - medium"), React.createElement(_1.ButtonBlack, {
+    label: 'custom text',
+    size: 'medium'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "black - outlined - large"), React.createElement(_1.ButtonBlack, {
+    label: 'custom text',
+    size: 'large'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "black - solid - small"), React.createElement(_1.ButtonBlack, {
+    label: 'custom text',
+    size: 'small',
+    variant: 'solid'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "black - solid - medium"), React.createElement(_1.ButtonBlack, {
+    label: 'custom text',
+    size: 'medium',
+    variant: 'solid'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "black - solid - large"), React.createElement(_1.ButtonBlack, {
+    label: 'custom text',
+    size: 'large',
+    variant: 'solid'
+  }), React.createElement("br", null), React.createElement("p", null, "ABbutton primary small"), React.createElement(_1.ABbutton, {
     color: 'Primary',
     text: 'custom text',
     size: 'small'
@@ -40699,7 +40729,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65138" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65497" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

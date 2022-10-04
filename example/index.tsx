@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { ABbutton, ABInput, AbInputQuant, ABOptionGroup, ABTag, ButtonDanger, ButtonSuccess, Card } from '../.';
+import { ABbutton, ABInput, AbInputQuant, ABOptionGroup, ABTag, ButtonBlack, ButtonDanger, ButtonLed, ButtonSuccess, Card } from '../.';
 
 import 'react-app-polyfill/ie11';
 
@@ -10,6 +10,14 @@ const App = () => {
   return (
     <div>
       <br /><br />
+      <ButtonLed label='custom text' size='small' />
+      <br /><br />
+      <ButtonLed label='custom text' size='medium' />
+      <br /><br />
+      <ButtonLed label='custom text' size='large' />
+      <br /><br />
+
+
 
       <br /><br />
       <p>success - solid - small</p>
@@ -56,6 +64,26 @@ const App = () => {
       <p>danger - outlined - large</p>
       <ButtonDanger label='custom text' size='large' variant='outlined' />
       <br /><br />
+
+      
+      <p>black - outlined - small</p>
+      <ButtonBlack label='custom text' size='small' />
+      <br /><br />
+      <p>black - outlined - medium</p>
+      <ButtonBlack label='custom text' size='medium' />
+      <br /><br />
+      <p>black - outlined - large</p>
+      <ButtonBlack label='custom text' size='large' />
+      <br /><br />
+
+      <p>black - solid - small</p>
+      <ButtonBlack label='custom text' size='small' variant='solid' />
+      <br /><br />
+      <p>black - solid - medium</p>
+      <ButtonBlack label='custom text' size='medium' variant='solid' />
+      <br /><br />
+      <p>black - solid - large</p>
+      <ButtonBlack label='custom text' size='large' variant='solid' />
       
       <br />
       <p>ABbutton primary small</p>
