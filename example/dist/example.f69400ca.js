@@ -35852,7 +35852,7 @@ _taggedTemplateLiteralLoose(["\n  font-family: sans-serif;\n  align-items: cente
 }, function (props) {
   return props.variant === 'solid' ? '#ffffff' : '#65c944';
 }, function (props) {
-  return props.size === 'small' ? '140px' : props.size === 'medium' ? '180px' : '220px';
+  return props.size === 'small' ? '120px' : props.size === 'medium' ? '180px' : '220px';
 }, function (props) {
   return props.size === 'small' ? '32px' : props.size === 'medium' ? '40px' : '48px';
 }, function (props) {
@@ -35886,7 +35886,7 @@ _taggedTemplateLiteralLoose(["\n  font-family: sans-serif;\n  align-items: cente
 }, function (props) {
   return props.variant === 'solid' ? '#ffffff' : '#de5856';
 }, function (props) {
-  return props.size === 'small' ? '140px' : props.size === 'medium' ? '180px' : '220px';
+  return props.size === 'small' ? '120px' : props.size === 'medium' ? '180px' : '220px';
 }, function (props) {
   return props.size === 'small' ? '32px' : props.size === 'medium' ? '40px' : '48px';
 }, function (props) {
@@ -40643,7 +40643,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52268" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51395" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
