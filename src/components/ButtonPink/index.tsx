@@ -10,12 +10,16 @@ export interface ButtonPinkProps extends ButtonHTMLAttributes<HTMLButtonElement>
 }
 
 const ButtonStyled = styled.button<ButtonPinkProps>`
+  --pink-light-main: ${(props: ButtonPinkProps) => props.intensity === 'light' ? '#ffc0cb' : '#FF0065'};
+  --pink-light-main-disabled: ${(props: ButtonPinkProps) => props.intensity === 'light' ? '#ff8da140' : '#FF006540'};
+  --pink-light-main-hover: ${(props: ButtonPinkProps) => props.intensity === 'light' ? '#ff748c' : '#cc0050#cc0050'};
+
   font-family: sans-serif;
   align-items: center;
   justify-content: center;
-  background-color: ${(props: ButtonPinkProps) => props.variant === 'solid' ? '#ffc0cb' : 'transparent'} ;
-  color: ${(props: ButtonPinkProps) => props.variant === 'solid' ? '#ffffff' : '#ffc0cb'};
-  border: 1px solid #ffc0cb;
+  background-color: ${(props: ButtonPinkProps) => props.variant === 'solid' ? 'var(--pink-light-main)' : 'transparent'} ;
+  color: ${(props: ButtonPinkProps) => props.variant === 'solid' ? '#ffffff' : 'var(--pink-light-main)'};
+  border: 1px solid var(--pink-light-main);
   border-radius: 8px;
   cursor: pointer;
   display: inline-flex;
@@ -29,29 +33,29 @@ const ButtonStyled = styled.button<ButtonPinkProps>`
 
   &:disabled {
     pointer-events: none;
-    background-color: ${(props: ButtonPinkProps) => props.variant === 'solid' ? '#ff8da140' : 'transparent'} ;
-    border-color: #ff8da140;
+    background-color: ${(props: ButtonPinkProps) => props.variant === 'solid' ? 'var(--pink-light-main-disabled' : 'transparent'} ;
+    border-color: 'var(--pink-light-main-disabled';
   }
 
   &:hover {
-    background-color: ${(props: ButtonPinkProps) => props.variant === 'solid' ? '#ff748c' : 'transparent'};
-    color: ${(props: ButtonPinkProps) => props.variant === 'solid' ? '#FFFFFF' : '#ff748c' };
-    border-color: #ff748c;
-    box-shadow: 0 0 0 0.75px #ff748c;
+    background-color: ${(props: ButtonPinkProps) => props.variant === 'solid' ? 'var(--pink-light-main-hover)' : 'transparent'};
+    color: ${(props: ButtonPinkProps) => props.variant === 'solid' ? '#FFFFFF' : 'var(--pink-light-main-hover)' };
+    border-color: var(--pink-light-main-hover);
+    box-shadow: 0 0 0 0.75px var(--pink-light-main-hover);
     transition: background-color 0.75s, border-color 0.75s, box-shadow 0.75s,
     color 0.75s;
   }
 
   &:focus {
-    background-color: ${(props: ButtonPinkProps) => props.variant === 'solid' ? '#ff748c' : 'transparent'};
-    color: ${(props: ButtonPinkProps) => props.variant === 'solid' ? '#FFFFFF' : '#ff748c' };
-    box-shadow: 0 0 0 3.5px #ff748c;
+    background-color: ${(props: ButtonPinkProps) => props.variant === 'solid' ? 'var(--pink-light-main-hover)' : 'transparent'};
+    color: ${(props: ButtonPinkProps) => props.variant === 'solid' ? '#FFFFFF' : 'var(--pink-light-main-hover)' };
+    box-shadow: 0 0 0 3.5px var(--pink-light-main-hover);
     font-weight: 600;
   }
 `
 
-export const ButtonPink = ({ label, size, variant, onClick}: ButtonPinkProps) => {
-  return (<ButtonStyled onClick={onClick} variant={variant} size={size} >
+export const ButtonPink = ({ label, size, variant, intensity, onClick}: ButtonPinkProps) => {
+  return (<ButtonStyled onClick={onClick} variant={variant} intensity={intensity} size={size} >
             {label}
           </ButtonStyled>)
 }
