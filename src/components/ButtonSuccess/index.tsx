@@ -21,7 +21,7 @@ const ButtonStyled = styled.button<ButtonSuccessProps>`
   font-weight: 600;
   outline: none;
   padding: 7.5px 15px;
-  min-width: ${(props: ButtonSuccessProps) => props.size === 'small' ? '120px' : props.size === 'medium' ?  '180px' : '220px' } ;
+  min-width: ${(props: ButtonSuccessProps) => props.size === 'small' ? '120px' : props.size === 'medium' ?  '170px' : '220px' } ;
   height: ${(props: ButtonSuccessProps) => props.size === 'small' ? '32px' : props.size === 'medium' ? '40px' : '48px' };
   transition: background-color 0.75s, border-color 0.75s, box-shadow 0.75s,
     color 0.75s;

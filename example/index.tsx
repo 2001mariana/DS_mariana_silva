@@ -10,6 +10,8 @@ const App = () => {
   return (
     <div>
       <br /><br />
+
+      <br /><br />
       <p>success - solid - small</p>
       <ButtonSuccess label='custom text' size='small' variant='solid' />
       <br /><br />

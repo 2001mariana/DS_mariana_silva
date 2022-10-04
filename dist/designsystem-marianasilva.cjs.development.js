@@ -153,7 +153,7 @@ var ButtonStyled$2 = /*#__PURE__*/styled.button(_templateObject$6 || (_templateO
 }, function (props) {
   return props.variant === 'solid' ? '#ffffff' : '#65c944';
 }, function (props) {
-  return props.size === 'small' ? '120px' : props.size === 'medium' ? '180px' : '220px';
+  return props.size === 'small' ? '120px' : props.size === 'medium' ? '170px' : '220px';
 }, function (props) {
   return props.size === 'small' ? '32px' : props.size === 'medium' ? '40px' : '48px';
 }, function (props) {
@@ -179,7 +179,7 @@ var ButtonStyled$3 = /*#__PURE__*/styled.button(_templateObject$7 || (_templateO
 }, function (props) {
   return props.variant === 'solid' ? '#ffffff' : '#de5856';
 }, function (props) {
-  return props.size === 'small' ? '120px' : props.size === 'medium' ? '180px' : '220px';
+  return props.size === 'small' ? '120px' : props.size === 'medium' ? '170px' : '220px';
 }, function (props) {
   return props.size === 'small' ? '32px' : props.size === 'medium' ? '40px' : '48px';
 }, function (props) {
@@ -199,6 +199,46 @@ var ButtonDanger = function ButtonDanger(_ref) {
   }, label);
 };
 
+var _templateObject$8;
+var ButtonStyled$4 = /*#__PURE__*/styled.button(_templateObject$8 || (_templateObject$8 = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  font-family: sans-serif;\n  align-items: center;\n  justify-content: center;\n  background-color: ", " ;\n  color: ", ";\n  border: 1px solid black;\n  border-radius: 8px;\n  cursor: pointer;\n  display: inline-flex;\n  font-weight: 600;\n  outline: none;\n  padding: 7.5px 15px;\n  min-width: ", " ;\n  height: ", ";\n  transition: background-color 0.75s, border-color 0.75s, box-shadow 0.75s,\n    color 0.75s;\n\n  &:disabled {\n    pointer-events: none;\n    background-color:'#0c1e0f40';\n    border-color: #0c1e0f40;\n  }\n\n  &:focus {\n    background-color: ", ";\n    box-shadow: 0 0 0 3.5px black;\n    font-weight: 600;\n  }\n"])), function (props) {
+  return props.variant === 'solid' ? 'black' : 'transparent';
+}, function (props) {
+  return props.variant === 'solid' ? '#FFFFFF' : 'black';
+}, function (props) {
+  return props.size === 'small' ? '120px' : props.size === 'medium' ? '170px' : '220px';
+}, function (props) {
+  return props.size === 'small' ? '32px' : props.size === 'medium' ? '40px' : '48px';
+}, function (props) {
+  return props.variant === 'solid' ? 'black' : 'transparent';
+});
+var ButtonBlack = function ButtonBlack(_ref) {
+  var label = _ref.label,
+      size = _ref.size,
+      variant = _ref.variant,
+      onClick = _ref.onClick;
+  return React__default.createElement(ButtonStyled$4, {
+    onClick: onClick,
+    variant: variant,
+    size: size
+  }, label);
+};
+
+var _templateObject$9;
+var ButtonStyled$5 = /*#__PURE__*/styled.button(_templateObject$9 || (_templateObject$9 = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  font-family: sans-serif;\n  align-items: center;\n  justify-content: center;\n  background-color:  #000000 ;\n  position: relative;\n  color: #FFFFFF;\n  border: 1px solid #000000;\n  border-radius: 8px;\n  user-select: none; \n  -webkit-user-select: none;\n  touch-action: manipulation;\n  cursor: pointer;\n  display: inline-flex;\n  z-index: 0;\n  font-weight: 600;\n  outline: none;\n  padding: 7.5px 15px;\n  min-width: ", " ;\n  height: ", ";\n  transition: background-color 0.75s, border-color 0.75s, box-shadow 0.75s,\n    color 0.75s;\n\n  :before {\n  content: \"\";\n  background: linear-gradient(45deg,#ff0000,#ff7300,#fffb00,#48ff00,#00ffd5, #002bff, #7a00ff,#ff00c8, #ff0000);\n  position: absolute;\n  background-size: 400%;\n  z-index: -1;\n  filter: blur(5px);\n  -webkit-filter: blur(5px);\n  width: calc(100% + 4px);\n  height: calc(100% + 4px);\n  animation: button-led 20s linear infinite;\n  transition: opacity 0.3s ease-in-out;\n  border-radius: 10px;\n}\n\n@keyframes button-led {\n  0% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 400% 0;\n  }\n  100% {\n    background-position: 0 0;\n  }\n}\n\n:after {\n  z-index: -1;\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: #222;\n  left: 0;\n  top: 0;\n  border-radius: 10px;\n}\n\n\n\n"])), function (props) {
+  return props.size === 'small' ? '120px' : props.size === 'medium' ? '170px' : '220px';
+}, function (props) {
+  return props.size === 'small' ? '32px' : props.size === 'medium' ? '40px' : '48px';
+});
+var ButtonLed = function ButtonLed(_ref) {
+  var label = _ref.label,
+      size = _ref.size,
+      onClick = _ref.onClick;
+  return React__default.createElement(ButtonStyled$5, {
+    onClick: onClick,
+    size: size
+  }, label);
+};
+
 var Thing = function Thing(_ref) {
   var children = _ref.children;
   return React__default.createElement("div", null, children || "the snozzberries taste like snozzberries");
@@ -209,7 +249,9 @@ exports.ABOptionGroup = ABOptionGroup;
 exports.ABTag = ABTag;
 exports.ABbutton = ABbutton;
 exports.AbInputQuant = AbInputQuant;
+exports.ButtonBlack = ButtonBlack;
 exports.ButtonDanger = ButtonDanger;
+exports.ButtonLed = ButtonLed;
 exports.ButtonSuccess = ButtonSuccess;
 exports.Card = Card;
 exports.Thing = Thing;

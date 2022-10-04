@@ -12,3 +12,5 @@ export * from './components/ABOptionGroup';
 export * from './components/ABInputQuant';
 export * from './components/ButtonSuccess';
 export * from './components/ButtonDanger';
+export * from './components/ButtonBlack';
+export * from './components/ButtonLed';
