@@ -1,14 +1,14 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from "react"
 
-import ButtonDanger from '../src/components/ButtonDanger'
+import { ButtonDanger } from '../src'
 
 export default {
     title: 'Components/ButtonDanger',
     component: ButtonDanger
 } as ComponentMeta<typeof ButtonDanger>
 
-const TemplateLarge: ComponentStory<typeof ButtonDanger> = (props) => <ButtonDanger label='large' size='large' {...props} />
+const TemplateLarge: ComponentStory<typeof ButtonDanger> = (props) => <ButtonDanger label='danger' {...props} />
 
 
 export const ButtonDangerVariants = TemplateLarge.bind({})

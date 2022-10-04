@@ -5,14 +5,10 @@ export interface ButtonDangerProps extends ButtonHTMLAttributes<HTMLButtonElemen
   label?: string
   variant?: 'solid' | 'outlined'
   size?: 'small' | 'medium' | 'large'
+  onClick?: () => void
 }
 
-export default function ButtonDanger({
-    className,
-    label,
-    ...props
-  }: ButtonDangerProps) {
-  const ButtonDanger = styled.button<ButtonDangerProps>`
+const ButtonStyled = styled.button<ButtonDangerProps>`
   font-family: sans-serif;
   align-items: center;
   justify-content: center;
@@ -25,7 +21,7 @@ export default function ButtonDanger({
   font-weight: 600;
   outline: none;
   padding: 7.5px 15px;
-  min-width: ${(props: ButtonDangerProps) => props.size === 'small' ? '140px' : props.size === 'medium' ?  '180px' : '220px' } ;
+  min-width: ${(props: ButtonDangerProps) => props.size === 'small' ? '120px' : props.size === 'medium' ?  '180px' : '220px' } ;
   height: ${(props: ButtonDangerProps) => props.size === 'small' ? '32px' : props.size === 'medium' ? '40px' : '48px' };
   transition: background-color 0.75s, border-color 0.75s, box-shadow 0.75s,
     color 0.75s;
@@ -48,9 +44,16 @@ export default function ButtonDanger({
         }
   `
 
+export const ButtonDanger = ({
+    label, size, variant, onClick
+  }: ButtonDangerProps) =>  { 
+
   return (
-    <ButtonDanger className={'buttonDangerClass'} {...props}>
-      {label && <span className={'buttonDangerLabelClass'}>{label}</span>}
-    </ButtonDanger>
+    <ButtonStyled  size={size} variant={variant} onClick={onClick}>
+      {label}
+    </ButtonStyled>
   )
 }
+
+  
+

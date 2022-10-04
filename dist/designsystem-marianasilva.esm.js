@@ -140,10 +140,62 @@ var AbInputQuant = function AbInputQuant(_ref) {
   }, "+")));
 };
 
+var _templateObject$6;
+var ButtonStyled$2 = /*#__PURE__*/styled.button(_templateObject$6 || (_templateObject$6 = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  font-family: sans-serif;\n  align-items: center;\n  justify-content: center;\n  background-color: ", " ;\n  color: ", ";\n  border: 1px solid #65c944;\n  border-radius: 8px;\n  cursor: pointer;\n  display: inline-flex;\n  font-weight: 600;\n  outline: none;\n  padding: 7.5px 15px;\n  min-width: ", " ;\n  height: ", ";\n  transition: background-color 0.75s, border-color 0.75s, box-shadow 0.75s,\n    color 0.75s;\n\n  &:disabled {\n    pointer-events: none;\n    background-color: ", " ;\n    border-color: #21a53740;\n  }\n\n  &:hover {\n    background-color: '#1c7e2c';\n    border-color: #1c7e2c;\n  }\n\n  &:focus {\n    background-color: ", ";\n    box-shadow: 0 0 0 3.5px #1c7e2c;\n    font-weight: 600;\n  }\n"])), function (props) {
+  return props.variant === 'solid' ? '#65c944' : 'transparent';
+}, function (props) {
+  return props.variant === 'solid' ? '#ffffff' : '#65c944';
+}, function (props) {
+  return props.size === 'small' ? '140px' : props.size === 'medium' ? '180px' : '220px';
+}, function (props) {
+  return props.size === 'small' ? '32px' : props.size === 'medium' ? '40px' : '48px';
+}, function (props) {
+  return props.variant === 'solid' ? '#21a53740' : 'transparent';
+}, function (props) {
+  return props.variant === 'solid' ? '#1c7e2c' : 'transparent';
+});
+var ButtonSuccess = function ButtonSuccess(_ref) {
+  var label = _ref.label,
+      size = _ref.size,
+      variant = _ref.variant,
+      onClick = _ref.onClick;
+  return React.createElement(ButtonStyled$2, {
+    onClick: onClick,
+    variant: variant,
+    size: size
+  }, label);
+};
+
+var _templateObject$7;
+var ButtonStyled$3 = /*#__PURE__*/styled.button(_templateObject$7 || (_templateObject$7 = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  font-family: sans-serif;\n  align-items: center;\n  justify-content: center;\n  background-color: ", " ;\n  color: ", ";\n  border: 1px solid #d34644;\n  border-radius: 8px;\n  cursor: pointer;\n  display: inline-flex;\n  font-weight: 600;\n  outline: none;\n  padding: 7.5px 15px;\n  min-width: ", " ;\n  height: ", ";\n  transition: background-color 0.75s, border-color 0.75s, box-shadow 0.75s,\n    color 0.75s;\n\n  &:disabled {\n    pointer-events: none;\n    background-color: ", " ;\n    border-color: #ef535040;\n  }\n\n    &:focus {\n          background-color: ", ";\n          box-shadow: 0 0 0 3.5px #ce4b49;\n          font-weight: 600;\n    }\n\n    &:hover {\n          background-color: '#ce4b49';\n          border-color: #ce4b49;\n        }\n  "])), function (props) {
+  return props.variant === 'solid' ? '#de5856' : 'transparent';
+}, function (props) {
+  return props.variant === 'solid' ? '#ffffff' : '#de5856';
+}, function (props) {
+  return props.size === 'small' ? '140px' : props.size === 'medium' ? '180px' : '220px';
+}, function (props) {
+  return props.size === 'small' ? '32px' : props.size === 'medium' ? '40px' : '48px';
+}, function (props) {
+  return props.variant === 'solid' ? '#ef535040' : 'transparent';
+}, function (props) {
+  return props.variant === 'solid' ? '#ce4b49' : 'transparent';
+});
+var ButtonDanger = function ButtonDanger(_ref) {
+  var label = _ref.label,
+      size = _ref.size,
+      variant = _ref.variant,
+      onClick = _ref.onClick;
+  return React.createElement(ButtonStyled$3, {
+    size: size,
+    variant: variant,
+    onClick: onClick
+  }, label);
+};
+
 var Thing = function Thing(_ref) {
   var children = _ref.children;
   return React.createElement("div", null, children || "the snozzberries taste like snozzberries");
 };
 
-export { ABInput, ABOptionGroup, ABTag, ABbutton, AbInputQuant, Card, Thing };
+export { ABInput, ABOptionGroup, ABTag, ABbutton, AbInputQuant, ButtonDanger, ButtonSuccess, Card, Thing };
 //# sourceMappingURL=designsystem-marianasilva.esm.js.map

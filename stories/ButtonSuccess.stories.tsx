@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from "react"
 
-import ButtonSuccess from '../src/components/ButtonSuccess'
+import { ButtonSuccess } from '../src'
 
 export default {
     title: 'Components/ButtonSuccess',
