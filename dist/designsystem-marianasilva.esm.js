@@ -146,7 +146,7 @@ var ButtonStyled$2 = /*#__PURE__*/styled.button(_templateObject$6 || (_templateO
 }, function (props) {
   return props.variant === 'solid' ? '#ffffff' : '#65c944';
 }, function (props) {
-  return props.size === 'small' ? '140px' : props.size === 'medium' ? '180px' : '220px';
+  return props.size === 'small' ? '120px' : props.size === 'medium' ? '180px' : '220px';
 }, function (props) {
   return props.size === 'small' ? '32px' : props.size === 'medium' ? '40px' : '48px';
 }, function (props) {
@@ -172,7 +172,7 @@ var ButtonStyled$3 = /*#__PURE__*/styled.button(_templateObject$7 || (_templateO
 }, function (props) {
   return props.variant === 'solid' ? '#ffffff' : '#de5856';
 }, function (props) {
-  return props.size === 'small' ? '140px' : props.size === 'medium' ? '180px' : '220px';
+  return props.size === 'small' ? '120px' : props.size === 'medium' ? '180px' : '220px';
 }, function (props) {
   return props.size === 'small' ? '32px' : props.size === 'medium' ? '40px' : '48px';
 }, function (props) {
