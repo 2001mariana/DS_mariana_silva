@@ -10,9 +10,9 @@ export interface ButtonPinkProps extends ButtonHTMLAttributes<HTMLButtonElement>
 }
 
 const ButtonStyled = styled.button<ButtonPinkProps>`
-  --pink-light-main: ${(props: ButtonPinkProps) => props.intensity === 'light' ? '#ffc0cb' : '#FF0065'};
+  --pink-light-main: ${(props: ButtonPinkProps) => props.intensity === 'light' ? '#ff99c1' : '#FF0065'};
   --pink-light-main-disabled: ${(props: ButtonPinkProps) => props.intensity === 'light' ? '#ff8da140' : '#FF006540'};
-  --pink-light-main-hover: ${(props: ButtonPinkProps) => props.intensity === 'light' ? '#ff748c' : '#cc0050#cc0050'};
+  --pink-light-main-hover: ${(props: ButtonPinkProps) => props.intensity === 'light' ? '#ff7fb2' : '#e5005a'};
 
   font-family: sans-serif;
   align-items: center;
@@ -33,7 +33,7 @@ const ButtonStyled = styled.button<ButtonPinkProps>`
 
   &:disabled {
     pointer-events: none;
-    background-color: ${(props: ButtonPinkProps) => props.variant === 'solid' ? 'var(--pink-light-main-disabled' : 'transparent'} ;
+    background-color: ${(props: ButtonPinkProps) => props.variant === 'solid' ? 'var(--pink-light-main-disabled)' : 'transparent'} ;
     border-color: 'var(--pink-light-main-disabled';
   }
 
