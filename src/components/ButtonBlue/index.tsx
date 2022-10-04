@@ -33,15 +33,17 @@ const ButtonStyled = styled.button<ButtonBlueProps>`
   }
 
   &:hover {
-    background-color: #406ba0;
-    color: #FFFFFF;
+    background-color: ${(props: ButtonBlueProps) => props.variant === 'solid' ? '#3b6393' : 'transparent'};
+    color: ${(props: ButtonBlueProps) => props.variant === 'solid' ? '#FFFFFF' : '#3b6393' };
     border-color: #406ba0;
+    box-shadow: 0 0 0 0.75px #3b6393;
     transition: background-color 0.75s, border-color 0.75s, box-shadow 0.75s,
     color 0.75s;
   }
 
   &:focus {
     background-color: ${(props: ButtonBlueProps) => props.variant === 'solid' ? '#3b6393' : 'transparent'};
+    color: ${(props: ButtonBlueProps) => props.variant === 'solid' ? '#FFFFFF' : '#3b6393' };
     box-shadow: 0 0 0 3.5px #3b6393;
     font-weight: 600;
   }

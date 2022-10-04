@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { ABbutton, ABInput, AbInputQuant, ABOptionGroup, ABTag, ButtonBlack, ButtonDanger, ButtonLed, ButtonSuccess, Card } from '../.';
+import { ABbutton, ABInput, AbInputQuant, ABOptionGroup, ABTag, ButtonBlack, ButtonBlue, ButtonDanger, ButtonGreen, ButtonLed, ButtonYellow, Card } from '../.';
 
 import 'react-app-polyfill/ie11';
 
@@ -17,28 +17,58 @@ const App = () => {
       <ButtonLed label='custom text' size='large' />
       <br /><br />
 
+      <p>blue - solid - small</p>
+      <ButtonBlue label='custom text' size='small' variant='solid' /><br /><br />
+      <p>blue - solid - medium</p>
+      <ButtonBlue label='custom text' size='small' variant='solid' /><br /><br />
+      <p>blue - solid - large</p>
+      <ButtonBlue label='custom text' size='small' variant='solid' />
+      <br /><br />
 
+      <p>blue - outlined - small</p>
+      <ButtonBlue label='custom text' size='small' variant='outlined' /><br /><br />
+      <p>blue - outlined - medium</p>
+      <ButtonBlue label='custom text' size='small' variant='outlined' /><br /><br />
+      <p>blue - outlined - large</p>
+      <ButtonBlue label='custom text' size='small' variant='outlined' />
+      <br /><br />
+      
+      <p>yellow - solid - small</p>
+      <ButtonYellow label='custom text' size='small' variant='solid' /><br /><br />
+      <p>yellow - solid - medium</p>
+      <ButtonYellow label='custom text' size='small' variant='solid' /><br /><br />
+      <p>yellow - solid - large</p>
+      <ButtonYellow label='custom text' size='small' variant='solid' />
+      <br /><br />
+
+      <p>yellow - outlined - small</p>
+      <ButtonYellow label='custom text' size='small' variant='outlined' /><br /><br />
+      <p>yellow - outlined - medium</p>
+      <ButtonYellow label='custom text' size='small' variant='outlined' /><br /><br />
+      <p>yellow - outlined - large</p>
+      <ButtonYellow label='custom text' size='small' variant='outlined' />
+      <br /><br />
 
       <br /><br />
-      <p>success - solid - small</p>
-      <ButtonSuccess label='custom text' size='small' variant='solid' />
+      <p>green - solid - small</p>
+      <ButtonGreen label='custom text' size='small' variant='solid' />
       <br /><br />
-      <p>success - solid - medium</p>
-      <ButtonSuccess label='custom text' size='medium' variant='solid' />
+      <p>green - solid - medium</p>
+      <ButtonGreen label='custom text' size='medium' variant='solid' />
       <br /><br />
-      <p>success - solid - large</p>
-      <ButtonSuccess label='custom text' size='large' variant='solid' />
+      <p>green - solid - large</p>
+      <ButtonGreen label='custom text' size='large' variant='solid' />
       <br /><br />
       
       <br /><br />
-      <p>success - outlined - small</p>
-      <ButtonSuccess label='custom text' size='small' variant='outlined' />
+      <p>green - outlined - small</p>
+      <ButtonGreen label='custom text' size='small' variant='outlined' />
       <br /><br />
-      <p>success - outlined - medium</p>
-      <ButtonSuccess label='custom text' size='medium' variant='outlined' />
+      <p>green - outlined - medium</p>
+      <ButtonGreen label='custom text' size='medium' variant='outlined' />
       <br /><br />
-      <p>success - outlined - large</p>
-      <ButtonSuccess label='custom text' size='large' variant='outlined' />
+      <p>green - outlined - large</p>
+      <ButtonGreen label='custom text' size='large' variant='outlined' />
       <br /><br />
 
       
