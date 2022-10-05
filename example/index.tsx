@@ -20,33 +20,49 @@ const App = () => {
       <p>blue - solid - small</p>
       <ButtonBlue label='custom text' size='small' variant='solid' /><br /><br />
       <p>blue - solid - medium</p>
-      <ButtonBlue label='custom text' size='small' variant='solid' /><br /><br />
+      <ButtonBlue label='custom text' size='medium' variant='solid' /><br /><br />
       <p>blue - solid - large</p>
-      <ButtonBlue label='custom text' size='small' variant='solid' />
+      <ButtonBlue label='custom text' size='large' variant='solid' />
       <br /><br />
 
       <p>blue - outlined - small</p>
       <ButtonBlue label='custom text' size='small' variant='outlined' /><br /><br />
       <p>blue - outlined - medium</p>
-      <ButtonBlue label='custom text' size='small' variant='outlined' /><br /><br />
+      <ButtonBlue label='custom text' size='medium' variant='outlined' /><br /><br />
       <p>blue - outlined - large</p>
-      <ButtonBlue label='custom text' size='small' variant='outlined' />
+      <ButtonBlue label='custom text' size='large' variant='outlined' />
       <br /><br />
 
-      <p>ButtonPink - solid - small</p>
-      <ButtonPink label='custom text' size='small' variant='solid' /><br /><br />
-      <p>ButtonPink - solid - medium</p>
-      <ButtonPink label='custom text' size='small' variant='solid' /><br /><br />
+      <p>ButtonPink - solid - small - intensity dark</p>
+      <ButtonPink label='custom text' size='small' variant='solid' intensity='dark' /><br /><br />
+      <p>ButtonPink - solid - medium - intensity dark</p>
+      <ButtonPink label='custom text' size='medium' variant='solid' intensity='dark' /><br /><br />
       <p>ButtonPink - solid - large</p>
-      <ButtonPink label='custom text' size='small' variant='solid' />
+      <ButtonPink label='custom text' size='large' variant='solid' intensity='dark' />
       <br /><br />
 
-      <p>ButtonPink - outlined - small</p>
-      <ButtonPink label='custom text' size='small' variant='outlined' /><br /><br />
-      <p>ButtonPink - outlined - medium</p>
-      <ButtonPink label='custom text' size='small' variant='outlined' /><br /><br />
-      <p>ButtonPink - outlined - large</p>
-      <ButtonPink label='custom text' size='small' variant='outlined' />
+      <p>ButtonPink - outlined - small - intensity dark</p>
+      <ButtonPink label='custom text' size='small' variant='outlined' intensity='dark' /><br /><br />
+      <p>ButtonPink - outlined - medium - intensity dark</p>
+      <ButtonPink label='custom text' size='medium' variant='outlined' intensity='dark' /><br /><br />
+      <p>ButtonPink - outlined - large - intensity dark</p>
+      <ButtonPink label='custom text' size='large' variant='outlined' intensity='dark' />
+      <br /><br />
+
+      <p>ButtonPink - solid - small - intensity light</p>
+      <ButtonPink label='custom text' size='small' variant='solid' intensity='light' /><br /><br />
+      <p>ButtonPink - solid - medium - intensity dark</p>
+      <ButtonPink label='custom text' size='medium' variant='solid' intensity='light' /><br /><br />
+      <p>ButtonPink - solid - large</p>
+      <ButtonPink label='custom text' size='large' variant='solid' intensity='light' />
+      <br /><br />
+
+      <p>ButtonPink - outlined - small - intensity light</p>
+      <ButtonPink label='custom text' size='small' variant='outlined' intensity='light' /><br /><br />
+      <p>ButtonPink - outlined - medium - intensity dark</p>
+      <ButtonPink label='custom text' size='medium' variant='outlined' intensity='light' /><br /><br />
+      <p>ButtonPink - outlined - large - intensity dark</p>
+      <ButtonPink label='custom text' size='large' variant='outlined' intensity='light' />
       <br /><br />
       
       <p>yellow - solid - small</p>

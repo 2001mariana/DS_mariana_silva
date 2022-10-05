@@ -36058,11 +36058,11 @@ var ButtonStyled$8 =
 _styledComponents.default.button(_templateObject$c || (_templateObject$c =
 /*#__PURE__*/
 _taggedTemplateLiteralLoose(["\n  --pink-light-main: ", ";\n  --pink-light-main-disabled: ", ";\n  --pink-light-main-hover: ", ";\n\n  font-family: sans-serif;\n  align-items: center;\n  justify-content: center;\n  background-color: ", " ;\n  color: ", ";\n  border: 1px solid var(--pink-light-main);\n  border-radius: 8px;\n  cursor: pointer;\n  display: inline-flex;\n  font-weight: 600;\n  outline: none;\n  padding: 7.5px 15px;\n  min-width: ", " ;\n  height: ", ";\n  transition: background-color 1.25s, border-color 1.25s, box-shadow 1.25s,\n    color 1.25s;\n\n  &:disabled {\n    pointer-events: none;\n    background-color: ", " ;\n    border-color: 'var(--pink-light-main-disabled';\n  }\n\n  &:hover {\n    background-color: ", ";\n    color: ", ";\n    border-color: var(--pink-light-main-hover);\n    box-shadow: 0 0 0 0.75px var(--pink-light-main-hover);\n    transition: background-color 0.75s, border-color 0.75s, box-shadow 0.75s,\n    color 0.75s;\n  }\n\n  &:focus {\n    background-color: ", ";\n    color: ", ";\n    box-shadow: 0 0 0 3.5px var(--pink-light-main-hover);\n    font-weight: 600;\n  }\n"])), function (props) {
-  return props.intensity === 'light' ? '#ffc0cb' : '#FF0065';
+  return props.intensity === 'light' ? '#ff99c1' : '#FF0065';
 }, function (props) {
   return props.intensity === 'light' ? '#ff8da140' : '#FF006540';
 }, function (props) {
-  return props.intensity === 'light' ? '#ff748c' : '#b20046';
+  return props.intensity === 'light' ? '#ff7fb2' : '#e5005a';
 }, function (props) {
   return props.variant === 'solid' ? 'var(--pink-light-main)' : 'transparent';
 }, function (props) {
@@ -36072,7 +36072,7 @@ _taggedTemplateLiteralLoose(["\n  --pink-light-main: ", ";\n  --pink-light-main-
 }, function (props) {
   return props.size === 'small' ? '32px' : props.size === 'medium' ? '40px' : '48px';
 }, function (props) {
-  return props.variant === 'solid' ? 'var(--pink-light-main-disabled' : 'transparent';
+  return props.variant === 'solid' ? 'var(--pink-light-main-disabled)' : 'transparent';
 }, function (props) {
   return props.variant === 'solid' ? 'var(--pink-light-main-hover)' : 'transparent';
 }, function (props) {
@@ -40715,11 +40715,11 @@ var App = function App() {
     variant: 'solid'
   }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "blue - solid - medium"), React.createElement(_1.ButtonBlue, {
     label: 'custom text',
-    size: 'small',
+    size: 'medium',
     variant: 'solid'
   }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "blue - solid - large"), React.createElement(_1.ButtonBlue, {
     label: 'custom text',
-    size: 'small',
+    size: 'large',
     variant: 'solid'
   }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "blue - outlined - small"), React.createElement(_1.ButtonBlue, {
     label: 'custom text',
@@ -40727,36 +40727,72 @@ var App = function App() {
     variant: 'outlined'
   }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "blue - outlined - medium"), React.createElement(_1.ButtonBlue, {
     label: 'custom text',
-    size: 'small',
+    size: 'medium',
     variant: 'outlined'
   }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "blue - outlined - large"), React.createElement(_1.ButtonBlue, {
     label: 'custom text',
-    size: 'small',
+    size: 'large',
     variant: 'outlined'
-  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - solid - small"), React.createElement(_1.ButtonPink, {
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - solid - small - intensity dark"), React.createElement(_1.ButtonPink, {
     label: 'custom text',
     size: 'small',
-    variant: 'solid'
-  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - solid - medium"), React.createElement(_1.ButtonPink, {
+    variant: 'solid',
+    intensity: 'dark'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - solid - medium - intensity dark"), React.createElement(_1.ButtonPink, {
     label: 'custom text',
-    size: 'small',
-    variant: 'solid'
+    size: 'medium',
+    variant: 'solid',
+    intensity: 'dark'
   }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - solid - large"), React.createElement(_1.ButtonPink, {
     label: 'custom text',
-    size: 'small',
-    variant: 'solid'
-  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - outlined - small"), React.createElement(_1.ButtonPink, {
+    size: 'large',
+    variant: 'solid',
+    intensity: 'dark'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - outlined - small - intensity dark"), React.createElement(_1.ButtonPink, {
     label: 'custom text',
     size: 'small',
-    variant: 'outlined'
-  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - outlined - medium"), React.createElement(_1.ButtonPink, {
+    variant: 'outlined',
+    intensity: 'dark'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - outlined - medium - intensity dark"), React.createElement(_1.ButtonPink, {
+    label: 'custom text',
+    size: 'medium',
+    variant: 'outlined',
+    intensity: 'dark'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - outlined - large - intensity dark"), React.createElement(_1.ButtonPink, {
+    label: 'custom text',
+    size: 'large',
+    variant: 'outlined',
+    intensity: 'dark'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - solid - small - intensity light"), React.createElement(_1.ButtonPink, {
     label: 'custom text',
     size: 'small',
-    variant: 'outlined'
-  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - outlined - large"), React.createElement(_1.ButtonPink, {
+    variant: 'solid',
+    intensity: 'light'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - solid - medium - intensity dark"), React.createElement(_1.ButtonPink, {
+    label: 'custom text',
+    size: 'medium',
+    variant: 'solid',
+    intensity: 'light'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - solid - large"), React.createElement(_1.ButtonPink, {
+    label: 'custom text',
+    size: 'large',
+    variant: 'solid',
+    intensity: 'light'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - outlined - small - intensity light"), React.createElement(_1.ButtonPink, {
     label: 'custom text',
     size: 'small',
-    variant: 'outlined'
+    variant: 'outlined',
+    intensity: 'light'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - outlined - medium - intensity dark"), React.createElement(_1.ButtonPink, {
+    label: 'custom text',
+    size: 'medium',
+    variant: 'outlined',
+    intensity: 'light'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPink - outlined - large - intensity dark"), React.createElement(_1.ButtonPink, {
+    label: 'custom text',
+    size: 'large',
+    variant: 'outlined',
+    intensity: 'light'
   }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "yellow - solid - small"), React.createElement(_1.ButtonYellow, {
     label: 'custom text',
     size: 'small',
@@ -40935,7 +40971,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55363" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55605" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
