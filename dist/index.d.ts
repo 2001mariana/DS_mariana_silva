@@ -17,3 +17,4 @@ export * from './components/ButtonLed';
 export * from './components/ButtonBlue';
 export * from './components/ButtonYellow';
 export * from './components/ButtonPink';
+export * from './components/ButtonPinkLed';

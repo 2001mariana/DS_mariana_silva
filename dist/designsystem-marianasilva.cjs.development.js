@@ -349,6 +349,28 @@ var ButtonPink = function ButtonPink(_ref) {
   }, label);
 };
 
+var _templateObject$d;
+var ButtonStyled$9 = /*#__PURE__*/styled.button(_templateObject$d || (_templateObject$d = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  --pink-light-main: ", ";\n  --pink-light-main-after: ", ";\n\n  font-family: sans-serif;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n  background-color: var(--pink-light-main);\n  color: #FFFFFF;\n  border: 1px solid var(--pink-light-main);\n  border-radius: 8px;\n  user-select: none; \n  -webkit-user-select: none;\n  touch-action: manipulation;\n  cursor: pointer;\n  display: inline-flex;\n  z-index: 0;\n  font-weight: 600;\n  outline: none;\n  padding: 7.5px 15px;\n  min-width: ", " ;\n  height: ", ";\n  transition: background-color 0.75s, border-color 0.75s, box-shadow 0.75s,\n    color 0.75s;\n\n  :before {\n  content: \"\";\n  background: linear-gradient(45deg,#ff81e1, #ff9ae7,#ffbcef, #ff45d1,#ff9ae6, #ff66e0, #ff81e1,#F865FA, #fa6fe5);\n  position: absolute;\n  background-size: 400%;\n  z-index: -1;\n  filter: blur(2px);\n  -webkit-filter: blur(2px);\n  width: calc(100% + 6px);\n  height: calc(100% + 6px);\n  animation: button-led 20s infinite;\n  border-radius: 10px;\n}\n\n@keyframes button-led {\n  0% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 400% 0;\n  }\n  100% {\n    background-position: 0 0;\n  }\n}\n\n:after {\n  z-index: -1;\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: var(--pink-light-main-after);\n  left: 0;\n  top: 0;\n  border-radius: 10px;\n}\n\n"])), function (props) {
+  return props.intensity === 'light' ? '#FFCDF340' : '#e5005a70';
+}, function (props) {
+  return props.intensity === 'light' ? '#FFCDF340' : '#e5005a90';
+}, function (props) {
+  return props.size === 'small' ? '100px' : props.size === 'medium' ? '150px' : '200px';
+}, function (props) {
+  return props.size === 'small' ? '32px' : props.size === 'medium' ? '40px' : '48px';
+});
+var ButtonPinkLed = function ButtonPinkLed(_ref) {
+  var label = _ref.label,
+      size = _ref.size,
+      intensity = _ref.intensity,
+      onClick = _ref.onClick;
+  return React__default.createElement(ButtonStyled$9, {
+    onClick: onClick,
+    size: size,
+    intensity: intensity
+  }, label);
+};
+
 var Thing = function Thing(_ref) {
   var children = _ref.children;
   return React__default.createElement("div", null, children || "the snozzberries taste like snozzberries");
@@ -365,6 +387,7 @@ exports.ButtonDanger = ButtonDanger;
 exports.ButtonGreen = ButtonGreen;
 exports.ButtonLed = ButtonLed;
 exports.ButtonPink = ButtonPink;
+exports.ButtonPinkLed = ButtonPinkLed;
 exports.ButtonYellow = ButtonYellow;
 exports.Card = Card;
 exports.Thing = Thing;

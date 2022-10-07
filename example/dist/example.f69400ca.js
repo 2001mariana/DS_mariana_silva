@@ -35617,7 +35617,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Thing = exports.Card = exports.ButtonYellow = exports.ButtonPink = exports.ButtonLed = exports.ButtonGreen = exports.ButtonDanger = exports.ButtonBlue = exports.ButtonBlack = exports.AbInputQuant = exports.ABbutton = exports.ABTag = exports.ABOptionGroup = exports.ABInput = void 0;
+exports.Thing = exports.Card = exports.ButtonYellow = exports.ButtonPinkLed = exports.ButtonPink = exports.ButtonLed = exports.ButtonGreen = exports.ButtonDanger = exports.ButtonBlue = exports.ButtonBlack = exports.AbInputQuant = exports.ABbutton = exports.ABTag = exports.ABOptionGroup = exports.ABInput = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
@@ -36098,6 +36098,36 @@ var ButtonPink = function ButtonPink(_ref) {
 };
 
 exports.ButtonPink = ButtonPink;
+
+var _templateObject$d;
+
+var ButtonStyled$9 =
+/*#__PURE__*/
+_styledComponents.default.button(_templateObject$d || (_templateObject$d =
+/*#__PURE__*/
+_taggedTemplateLiteralLoose(["\n  --pink-light-main: ", ";\n  --pink-light-main-after: ", ";\n\n  font-family: sans-serif;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n  background-color: var(--pink-light-main);\n  color: #FFFFFF;\n  border: 1px solid var(--pink-light-main);\n  border-radius: 8px;\n  user-select: none; \n  -webkit-user-select: none;\n  touch-action: manipulation;\n  cursor: pointer;\n  display: inline-flex;\n  z-index: 0;\n  font-weight: 600;\n  outline: none;\n  padding: 7.5px 15px;\n  min-width: ", " ;\n  height: ", ";\n  transition: background-color 0.75s, border-color 0.75s, box-shadow 0.75s,\n    color 0.75s;\n\n  :before {\n  content: \"\";\n  background: linear-gradient(45deg,#ff81e1, #ff9ae7,#ffbcef, #ff45d1,#ff9ae6, #ff66e0, #ff81e1,#F865FA, #fa6fe5);\n  position: absolute;\n  background-size: 400%;\n  z-index: -1;\n  filter: blur(2px);\n  -webkit-filter: blur(2px);\n  width: calc(100% + 6px);\n  height: calc(100% + 6px);\n  animation: button-led 20s infinite;\n  border-radius: 10px;\n}\n\n@keyframes button-led {\n  0% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 400% 0;\n  }\n  100% {\n    background-position: 0 0;\n  }\n}\n\n:after {\n  z-index: -1;\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: var(--pink-light-main-after);\n  left: 0;\n  top: 0;\n  border-radius: 10px;\n}\n\n"])), function (props) {
+  return props.intensity === 'light' ? '#FFCDF340' : '#e5005a70';
+}, function (props) {
+  return props.intensity === 'light' ? '#FFCDF340' : '#e5005a90';
+}, function (props) {
+  return props.size === 'small' ? '100px' : props.size === 'medium' ? '150px' : '200px';
+}, function (props) {
+  return props.size === 'small' ? '32px' : props.size === 'medium' ? '40px' : '48px';
+});
+
+var ButtonPinkLed = function ButtonPinkLed(_ref) {
+  var label = _ref.label,
+      size = _ref.size,
+      intensity = _ref.intensity,
+      onClick = _ref.onClick;
+  return _react.default.createElement(ButtonStyled$9, {
+    onClick: onClick,
+    size: size,
+    intensity: intensity
+  }, label);
+};
+
+exports.ButtonPinkLed = ButtonPinkLed;
 
 var Thing = function Thing(_ref) {
   var children = _ref.children;
@@ -40700,15 +40730,36 @@ var App = function App() {
       valueInput = _a[0],
       setValueInput = _a[1];
 
-  return React.createElement("div", null, React.createElement("br", null), React.createElement("br", null), React.createElement(_1.ButtonLed, {
+  return React.createElement("div", null, React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonLed - small"), React.createElement(_1.ButtonLed, {
     label: 'custom text',
     size: 'small'
-  }), React.createElement("br", null), React.createElement("br", null), React.createElement(_1.ButtonLed, {
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonLed - medium"), React.createElement(_1.ButtonLed, {
     label: 'custom text',
     size: 'medium'
-  }), React.createElement("br", null), React.createElement("br", null), React.createElement(_1.ButtonLed, {
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonLed - large"), React.createElement(_1.ButtonLed, {
     label: 'custom text',
     size: 'large'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPinkLed - dark - small"), React.createElement(_1.ButtonPinkLed, {
+    label: 'custom text',
+    size: 'small'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPinkLed - dark - medium"), React.createElement(_1.ButtonPinkLed, {
+    label: 'custom text',
+    size: 'medium'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPinkLed - dark - large"), React.createElement(_1.ButtonPinkLed, {
+    label: 'custom text',
+    size: 'large'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPinkLed - light - small"), React.createElement(_1.ButtonPinkLed, {
+    label: 'custom text',
+    size: 'small',
+    intensity: 'light'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPinkLed - light - medium"), React.createElement(_1.ButtonPinkLed, {
+    label: 'custom text',
+    size: 'medium',
+    intensity: 'light'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonPinkLed - light - large"), React.createElement(_1.ButtonPinkLed, {
+    label: 'custom text',
+    size: 'large',
+    intensity: 'light'
   }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "blue - solid - small"), React.createElement(_1.ButtonBlue, {
     label: 'custom text',
     size: 'small',
@@ -40971,7 +41022,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55605" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55236" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

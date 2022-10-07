@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { ABbutton, ABInput, AbInputQuant, ABOptionGroup, ABTag, ButtonBlack, ButtonBlue, ButtonDanger, ButtonGreen, ButtonLed, ButtonPink, ButtonYellow, Card } from '../.';
+import { ABbutton, ABInput, AbInputQuant, ABOptionGroup, ABTag, ButtonBlack, ButtonBlue, ButtonDanger, ButtonGreen, ButtonLed, ButtonPink, ButtonPinkLed, ButtonYellow, Card } from '../.';
 
 import 'react-app-polyfill/ie11';
 
@@ -10,11 +10,36 @@ const App = () => {
   return (
     <div>
       <br /><br />
+      <p>ButtonLed - small</p>
       <ButtonLed label='custom text' size='small' />
       <br /><br />
+      <p>ButtonLed - medium</p>
       <ButtonLed label='custom text' size='medium' />
       <br /><br />
+      <p>ButtonLed - large</p>
       <ButtonLed label='custom text' size='large' />
+      <br /><br />
+
+      <br /><br />
+      <p>ButtonPinkLed - dark - small</p>
+      <ButtonPinkLed label='custom text' size='small' />
+      <br /><br />
+      <p>ButtonPinkLed - dark - medium</p>
+      <ButtonPinkLed label='custom text' size='medium' />
+      <br /><br />
+      <p>ButtonPinkLed - dark - large</p>
+      <ButtonPinkLed label='custom text' size='large' />
+      <br /><br />
+
+      <br /><br />
+      <p>ButtonPinkLed - light - small</p>
+      <ButtonPinkLed label='custom text' size='small' intensity='light' />
+      <br /><br />
+      <p>ButtonPinkLed - light - medium</p>
+      <ButtonPinkLed label='custom text' size='medium' intensity='light' />
+      <br /><br />
+      <p>ButtonPinkLed - light - large</p>
+      <ButtonPinkLed label='custom text' size='large' intensity='light' />
       <br /><br />
 
       <p>blue - solid - small</p>
