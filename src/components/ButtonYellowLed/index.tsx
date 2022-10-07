@@ -9,8 +9,8 @@ export interface ButtonYellowLedProps extends ButtonHTMLAttributes<HTMLButtonEle
 }
 
 const ButtonStyled = styled.button<ButtonYellowLedProps>`
-  --green-bg-color: ${(props: ButtonYellowLedProps) => props.intensity === 'light' ? '#fbf513' : '	#fdd70090'};
-  --green-bg-color-after: ${(props: ButtonYellowLedProps) => props.intensity === 'light' ? '#fbf513' : '	#fdd700'};
+  --green-bg-color: ${(props: ButtonYellowLedProps) => props.intensity === 'light' ? '#fbf51350' : '	#fdd70070'};
+  --green-bg-color-after: ${(props: ButtonYellowLedProps) => props.intensity === 'light' ? '#fbf51350' : '	#fdd70080'};
 
   font-family: sans-serif;
   align-items: center;

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { ABbutton, ABInput, AbInputQuant, ABOptionGroup, ABTag, ButtonBlack, ButtonBlue, ButtonBlueLed, ButtonDanger, ButtonGreen, ButtonGreenLed, ButtonLed, ButtonPink, ButtonPinkLed, ButtonYellow, Card } from '../.';
+import { ABbutton, ABInput, AbInputQuant, ABOptionGroup, ABTag, ButtonBlack, ButtonBlue, ButtonBlueLed, ButtonDanger, ButtonGreen, ButtonGreenLed, ButtonLed, ButtonPink, ButtonPinkLed, ButtonYellow, ButtonYellowLed, Card } from '../.';
 
 import 'react-app-polyfill/ie11';
 
@@ -143,25 +143,21 @@ const App = () => {
       <p>ButtonPink - outlined - large - intensity dark</p>
       <ButtonPink label='custom text' size='large' variant='outlined' intensity='light' />
       <br /><br />
-      
-      <br /><br />
-      <p>ButtonYellowLed - dark - small</p>
-      <ButtonYellowLed label='custom text' size='small' />
-      <br /><br />
-      <p>ButtonYellowLed - dark - medium</p>
-      <ButtonYellowLed label='custom text' size='medium' />
-      <br /><br />
-      <p>ButtonYellowLed - dark - large</p>
-      <ButtonYellowLed label='custom text' size='large' />
-      <br /><br />
 
       <br /><br />
+
+      <p>ButtonYellowLed - dark - small</p>
+      <ButtonYellowLed label='custom text' size='small' intensity='dark' /><br /><br />
+      <p>ButtonYellowLed - dark - medium</p>
+      <ButtonYellowLed label='custom text' size='medium' intensity='dark' /><br /><br />
+      <p>ButtonYellowLed - dark - large</p>
+      <ButtonYellowLed label='custom text' size='large' intensity='dark' />
+      <br /><br />
+
       <p>ButtonYellowLed - light - small</p>
-      <ButtonYellowLed label='custom text' size='small' intensity='light' />
-      <br /><br />
+      <ButtonYellowLed label='custom text' size='small' intensity='light' /><br /><br />
       <p>ButtonYellowLed - light - medium</p>
-      <ButtonYellowLed label='custom text' size='medium' intensity='light' />
-      <br /><br />
+      <ButtonYellowLed label='custom text' size='medium' intensity='light' /><br /><br />
       <p>ButtonYellowLed - light - large</p>
       <ButtonYellowLed label='custom text' size='large' intensity='light' />
       <br /><br />
