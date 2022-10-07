@@ -144,6 +144,28 @@ const App = () => {
       <ButtonPink label='custom text' size='large' variant='outlined' intensity='light' />
       <br /><br />
       
+      <br /><br />
+      <p>ButtonYellowLed - dark - small</p>
+      <ButtonYellowLed label='custom text' size='small' />
+      <br /><br />
+      <p>ButtonYellowLed - dark - medium</p>
+      <ButtonYellowLed label='custom text' size='medium' />
+      <br /><br />
+      <p>ButtonYellowLed - dark - large</p>
+      <ButtonYellowLed label='custom text' size='large' />
+      <br /><br />
+
+      <br /><br />
+      <p>ButtonYellowLed - light - small</p>
+      <ButtonYellowLed label='custom text' size='small' intensity='light' />
+      <br /><br />
+      <p>ButtonYellowLed - light - medium</p>
+      <ButtonYellowLed label='custom text' size='medium' intensity='light' />
+      <br /><br />
+      <p>ButtonYellowLed - light - large</p>
+      <ButtonYellowLed label='custom text' size='large' intensity='light' />
+      <br /><br />
+
       <p>yellow - solid - small</p>
       <ButtonYellow label='custom text' size='small' variant='solid' /><br /><br />
       <p>yellow - solid - medium</p>

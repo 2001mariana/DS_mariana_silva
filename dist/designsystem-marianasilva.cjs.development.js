@@ -415,6 +415,28 @@ var ButtonGreenLed = function ButtonGreenLed(_ref) {
   }, label);
 };
 
+var _templateObject$g;
+var ButtonStyled$c = /*#__PURE__*/styled.button(_templateObject$g || (_templateObject$g = /*#__PURE__*/_taggedTemplateLiteralLoose(["\n  --green-bg-color: ", ";\n  --green-bg-color-after: ", ";\n\n  font-family: sans-serif;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n  background-color: var(--green-bg-color);\n  border: 1px solid var(--green-bg-color);\n  color: #FFFFFF;\n  text-shadow: 1px 1px 2px #fdd700, 0 0 1em #fdc400, 0 0 0.2em #fdaf00;\n  border-radius: 6px;\n  user-select: none; \n  -webkit-user-select: none;\n  touch-action: manipulation;\n  cursor: pointer;\n  display: inline-flex;\n  z-index: 0;\n  font-weight: 600;\n  outline: none;\n  padding: 7.5px 15px;\n  min-width: ", " ;\n  height: ", ";\n  transition: background-color 0.75s, border-color 0.75s, box-shadow 0.75s,\n    color 0.75s;\n\n  :before {\n  content: \"\";\n  background: linear-gradient(45deg,#fef67f,\t#fdd900,#FAED59, #fff44b,#fdd700, #fff118, #fdee00,#FFD966);\n  position: absolute;\n  background-size: 400%;\n  z-index: -1;\n  filter: blur(2px);\n  -webkit-filter: blur(2px);\n  width: calc(100% + 6px);\n  height: calc(100% + 6px);\n  animation: button-led 20s infinite;\n  border-radius: 8px;\n}\n\n@keyframes button-led {\n  0% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 400% 0;\n  }\n  100% {\n    background-position: 0 0;\n  }\n}\n\n:after {\n  z-index: -1;\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: var(--green-bg-color-after);\n  left: 0;\n  top: 0;\n  border-radius: 10px;\n}\n\n"])), function (props) {
+  return props.intensity === 'light' ? '#fbf513' : '	#fdd70090';
+}, function (props) {
+  return props.intensity === 'light' ? '#fbf513' : '	#fdd700';
+}, function (props) {
+  return props.size === 'small' ? '100px' : props.size === 'medium' ? '150px' : '200px';
+}, function (props) {
+  return props.size === 'small' ? '28px' : props.size === 'medium' ? '34px' : '42px';
+});
+var ButtonYellowLed = function ButtonYellowLed(_ref) {
+  var label = _ref.label,
+      size = _ref.size,
+      intensity = _ref.intensity,
+      onClick = _ref.onClick;
+  return React__default.createElement(ButtonStyled$c, {
+    onClick: onClick,
+    size: size,
+    intensity: intensity
+  }, label);
+};
+
 var Thing = function Thing(_ref) {
   var children = _ref.children;
   return React__default.createElement("div", null, children || "the snozzberries taste like snozzberries");
@@ -435,6 +457,7 @@ exports.ButtonLed = ButtonLed;
 exports.ButtonPink = ButtonPink;
 exports.ButtonPinkLed = ButtonPinkLed;
 exports.ButtonYellow = ButtonYellow;
+exports.ButtonYellowLed = ButtonYellowLed;
 exports.Card = Card;
 exports.Thing = Thing;
 //# sourceMappingURL=designsystem-marianasilva.cjs.development.js.map
