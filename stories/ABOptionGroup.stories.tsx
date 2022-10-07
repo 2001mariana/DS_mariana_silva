@@ -14,7 +14,22 @@ const TemplatePrimary: ComponentStory<typeof ABOptionGroup> = (props) =>
 export const ABPrimary = TemplatePrimary.bind({})
 
 const optionDefault = [
-                        {id: 1, title:'E-book', body: 'R$ 00,00', footer: '.pff, ...'},
-                        {id: 2, title:' Impresso', body: 'R$ 00,00', footer: '.pff, ...'},
-                        {id: 3, title:'E-book + Impresso', body: 'R$ 00,00', footer: '.pff, ...'},
-                    ]
+    {
+      body: 'custom body',
+      footer: 'custom description/footer',
+      id: 1,
+      title: 'custom title'
+    },
+    {
+      body: 'custom body',
+      footer: 'custom description/footer',
+      id: 2,
+      title: ' Imcustom title'
+    },
+    {
+      body: 'custom body',
+      footer: 'custom description/footer',
+      id: 3,
+      title: 'E-book + Imcustom title'
+    }
+  ]
