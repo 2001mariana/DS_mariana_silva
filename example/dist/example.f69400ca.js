@@ -35617,7 +35617,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Thing = exports.Card = exports.ButtonYellowLed = exports.ButtonYellow = exports.ButtonPinkLed = exports.ButtonPink = exports.ButtonLed = exports.ButtonGreenLed = exports.ButtonGreen = exports.ButtonDanger = exports.ButtonBlueLed = exports.ButtonBlue = exports.ButtonBlack = exports.AbInputQuant = exports.ABbutton = exports.ABTag = exports.ABOptionGroup = exports.ABInput = void 0;
+exports.Thing = exports.Card = exports.ButtonYellowLed = exports.ButtonYellow = exports.ButtonRainbow = exports.ButtonPinkLed = exports.ButtonPink = exports.ButtonLed = exports.ButtonGreenLed = exports.ButtonGreen = exports.ButtonDanger = exports.ButtonBlueLed = exports.ButtonBlue = exports.ButtonBlack = exports.AbInputQuant = exports.ABbutton = exports.ABTag = exports.ABOptionGroup = exports.ABInput = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
@@ -36195,10 +36195,10 @@ var ButtonStyled$c =
 /*#__PURE__*/
 _styledComponents.default.button(_templateObject$g || (_templateObject$g =
 /*#__PURE__*/
-_taggedTemplateLiteralLoose(["\n  --green-bg-color: ", ";\n  --green-bg-color-after: ", ";\n\n  font-family: sans-serif;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n  background-color: var(--green-bg-color);\n  border: 1px solid var(--green-bg-color);\n  color: #FFFFFF;\n  text-shadow: 1px 1px 2px #fdd700, 0 0 1em #fdc400, 0 0 0.2em #fdaf00;\n  border-radius: 6px;\n  user-select: none; \n  -webkit-user-select: none;\n  touch-action: manipulation;\n  cursor: pointer;\n  display: inline-flex;\n  z-index: 0;\n  font-weight: 600;\n  outline: none;\n  padding: 7.5px 15px;\n  min-width: ", " ;\n  height: ", ";\n  transition: background-color 0.75s, border-color 0.75s, box-shadow 0.75s,\n    color 0.75s;\n\n  :before {\n  content: \"\";\n  background: linear-gradient(45deg,#fef67f,\t#fdd900,#FAED59, #fff44b,#fdd700, #fff118, #fdee00,#FFD966);\n  position: absolute;\n  background-size: 400%;\n  z-index: -1;\n  filter: blur(2px);\n  -webkit-filter: blur(2px);\n  width: calc(100% + 6px);\n  height: calc(100% + 6px);\n  animation: button-led 20s infinite;\n  border-radius: 8px;\n}\n\n@keyframes button-led {\n  0% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 400% 0;\n  }\n  100% {\n    background-position: 0 0;\n  }\n}\n\n:after {\n  z-index: -1;\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: var(--green-bg-color-after);\n  left: 0;\n  top: 0;\n  border-radius: 10px;\n}\n\n"])), function (props) {
-  return props.intensity === 'light' ? '#fbf51350' : '	#fdd70070';
+_taggedTemplateLiteralLoose(["\n  --green-bg-color: ", ";\n  --green-bg-color-after: ", ";\n\n  font-family: sans-serif;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n  background-color: var(--green-bg-color);\n  border: 1px solid var(--green-bg-color);\n  color: #FFFFFF;\n  text-shadow: 1px 1px 2px #fdd700, 0 0 1em #fdc400, 0 0 0.2em #fdaf00;\n  border-radius: 6px;\n  user-select: none; \n  -webkit-user-select: none;\n  touch-action: manipulation;\n  cursor: pointer;\n  display: inline-flex;\n  z-index: 0;\n  font-weight: 600;\n  outline: none;\n  padding: 7.5px 15px;\n  min-width: ", " ;\n  height: ", ";\n  transition: background-color 0.75s, border-color 0.75s, box-shadow 0.75s,\n    color 0.75s;\n\n  :before {\n  content: \"\";\n  background: linear-gradient(45deg,#fef67f,\t#FFF11A,#FAED59, #fff44b,#FFF230, #fff118, #fdee00,#FFD966);\n  position: absolute;\n  background-size: 400%;\n  z-index: -1;\n  filter: blur(2px);\n  -webkit-filter: blur(2px);\n  width: calc(100% + 6px);\n  height: calc(100% + 6px);\n  animation: button-led 20s infinite;\n  border-radius: 8px;\n}\n\n@keyframes button-led {\n  0% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 400% 0;\n  }\n  100% {\n    background-position: 0 0;\n  }\n}\n\n:after {\n  z-index: -1;\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: var(--green-bg-color-after);\n  left: 0;\n  top: 0;\n  border-radius: 10px;\n}\n\n"])), function (props) {
+  return props.intensity === 'light' ? '#FFF44D80' : '	#ffc10790';
 }, function (props) {
-  return props.intensity === 'light' ? '#fbf51350' : '	#fdd70080';
+  return props.intensity === 'light' ? '#FFF44D80' : '	#ffc10790';
 }, function (props) {
   return props.size === 'small' ? '100px' : props.size === 'medium' ? '150px' : '200px';
 }, function (props) {
@@ -36218,6 +36218,30 @@ var ButtonYellowLed = function ButtonYellowLed(_ref) {
 };
 
 exports.ButtonYellowLed = ButtonYellowLed;
+
+var _templateObject$h;
+
+var ButtonStyled$d =
+/*#__PURE__*/
+_styledComponents.default.button(_templateObject$h || (_templateObject$h =
+/*#__PURE__*/
+_taggedTemplateLiteralLoose(["\n  font-family: sans-serif;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n  color: #FFFFFF;\n  border-radius: 8px;\n  user-select: none; \n  -webkit-user-select: none;\n  touch-action: manipulation;\n  border: 1px solid #FFFFFF;\n  text-shadow: 1px 1px 2px #242115, 0 0 1em #0d0d0d, 0 0 0.2em #140c82;\n  cursor: pointer;\n  display: inline-flex;\n  z-index: 0;\n  font-weight: 600;\n  outline: none;\n  padding: 7.5px 15px;\n  min-width: ", " ;\n  height: ", ";\n  transition: background-color 0.75s, border-color 0.75s, box-shadow 0.75s,\n    color 0.75s;\n\n  :before {\n  content: \"\";\n  background: linear-gradient(45deg,#ff0000,#ff7300,#fffb00,#48ff00,#00ffd5, #002bff, #7a00ff,#ff00c8, #ff0000);\n  position: absolute;\n  background-size: 400%;\n  z-index: -1;\n  filter: blur(5px);\n  -webkit-filter: blur(5px);\n  width: calc(100% + 4px);\n  height: calc(100% + 4px);\n  animation: button-led 20s linear infinite;\n  transition: opacity 0.3s ease-in-out;\n  border-radius: 10px;\n}\n\n@keyframes button-led {\n  0% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 400% 0;\n  }\n  100% {\n    background-position: 0 0;\n  }\n}\n\n:after {\n  z-index: -1;\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  border-radius: 10px;\n}\n\n\n\n"])), function (props) {
+  return props.size === 'small' ? '100px' : props.size === 'medium' ? '150px' : '200px';
+}, function (props) {
+  return props.size === 'small' ? '28px' : props.size === 'medium' ? '38px' : '48px';
+});
+
+var ButtonRainbow = function ButtonRainbow(_ref) {
+  var label = _ref.label,
+      size = _ref.size,
+      onClick = _ref.onClick;
+  return _react.default.createElement(ButtonStyled$d, {
+    onClick: onClick,
+    size: size
+  }, label);
+};
+
+exports.ButtonRainbow = ButtonRainbow;
 
 var Thing = function Thing(_ref) {
   var children = _ref.children;
@@ -40820,7 +40844,16 @@ var App = function App() {
       valueInput = _a[0],
       setValueInput = _a[1];
 
-  return React.createElement("div", null, React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonLed - small"), React.createElement(_1.ButtonLed, {
+  return React.createElement("div", null, React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonRainbow - small"), React.createElement(_1.ButtonRainbow, {
+    label: 'custom text',
+    size: 'small'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonRainbow - medium"), React.createElement(_1.ButtonRainbow, {
+    label: 'custom text',
+    size: 'medium'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonRainbow - large"), React.createElement(_1.ButtonRainbow, {
+    label: 'custom text',
+    size: 'large'
+  }), React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonLed - small"), React.createElement(_1.ButtonLed, {
     label: 'custom text',
     size: 'small'
   }), React.createElement("br", null), React.createElement("br", null), React.createElement("p", null, "ButtonLed - medium"), React.createElement(_1.ButtonLed, {
@@ -41184,7 +41217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50259" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57322" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

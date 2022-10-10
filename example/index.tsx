@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { ABbutton, ABInput, AbInputQuant, ABOptionGroup, ABTag, ButtonBlack, ButtonBlue, ButtonBlueLed, ButtonDanger, ButtonGreen, ButtonGreenLed, ButtonLed, ButtonPink, ButtonPinkLed, ButtonYellow, ButtonYellowLed, Card } from '../.';
+import { ABbutton, ABInput, AbInputQuant, ABOptionGroup, ABTag, ButtonBlack, ButtonBlue, ButtonBlueLed, ButtonDanger, ButtonGreen, ButtonGreenLed, ButtonLed, ButtonPink, ButtonPinkLed, ButtonRainbow, ButtonYellow, ButtonYellowLed, Card } from '../.';
 
 import 'react-app-polyfill/ie11';
 
@@ -9,6 +9,17 @@ const App = () => {
   const [valueInput, setValueInput] = React.useState<string>('')
   return (
     <div>
+      <br /><br />
+      <p>ButtonRainbow - small</p>
+      <ButtonRainbow label='custom text' size='small' />
+      <br /><br />
+      <p>ButtonRainbow - medium</p>
+      <ButtonRainbow label='custom text' size='medium' />
+      <br /><br />
+      <p>ButtonRainbow - large</p>
+      <ButtonRainbow label='custom text' size='large' />
+      <br />
+
       <br /><br />
       <p>ButtonLed - small</p>
       <ButtonLed label='custom text' size='small' />
